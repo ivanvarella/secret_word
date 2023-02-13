@@ -9,6 +9,8 @@ import { wordsList } from "./data/words";
 
 /* Components */
 import StartScreen from "./components/StartScreen/StartScreen";
+import Game from "./components/Game/Game";
+import GameOver from "./components/GameOver/GameOver";
 
 const stages = [
   { id: 1, name: "start" },
@@ -18,12 +20,15 @@ const stages = [
 
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
+  const [words] = useState(wordsList);
+
+  console.log(words);
 
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen />}
-      {gameStage === "game" && <StartScreen />}
-      {gameStage === "end" && <StartScreen />}
+      {gameStage === "game" && <Game />}
+      {gameStage === "end" && <GameOver />}
     </div>
   );
 }
