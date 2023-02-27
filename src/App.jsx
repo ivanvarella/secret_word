@@ -43,7 +43,7 @@ function App() {
 
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((l) => l.toLowerCase());
-    console.log(wordLetters);
+    console.log("wordLetters: ", wordLetters);
 
     setPickedWord(word);
     setPickedCategory(category);
