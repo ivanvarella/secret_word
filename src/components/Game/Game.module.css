@@ -27,6 +27,7 @@
   background-color: #fff;
   color: #000;
   font-weight: bold;
+  min-height: 100px;
 }
 
 .letterContainer p {
@@ -45,4 +46,5 @@
   font-size: 2em;
   text-align: center;
   margin-right: 1em;
+  text-transform: uppercase;
 }
